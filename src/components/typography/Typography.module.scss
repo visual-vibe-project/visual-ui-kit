@@ -1,9 +1,9 @@
-.typography {
+%typography {
   margin: 0;
 }
 
 .large {
-  @extend .typography;
+  @extend %typography;
 
   font-size: var(--font-size-xxl);
   font-weight: var(--font-weight-semi-bold);
@@ -11,7 +11,7 @@
 }
 
 .h1 {
-  @extend .typography;
+  @extend %typography;
 
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
@@ -19,7 +19,7 @@
 }
 
 .h2 {
-  @extend .typography;
+  @extend %typography;
 
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-bold);
@@ -27,7 +27,7 @@
 }
 
 .h3 {
-  @extend .typography;
+  @extend %typography;
 
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-semi-bold);
@@ -35,7 +35,7 @@
 }
 
 .regular-text-16 {
-  @extend .typography;
+  @extend %typography;
 
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-regular);
@@ -43,7 +43,7 @@
 }
 
 .bold-text-16 {
-  @extend .typography;
+  @extend %typography;
 
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-bold);
@@ -51,7 +51,7 @@
 }
 
 .regular-text-14 {
-  @extend .typography;
+  @extend %typography;
 
   font-size: var(--font-size-s);
   font-weight: var(--font-weight-regular);
@@ -59,7 +59,7 @@
 }
 
 .medium-text-14 {
-  @extend .typography;
+  @extend %typography;
 
   font-size: var(--font-size-s);
   font-weight: var(--font-weight-medium);
@@ -67,7 +67,7 @@
 }
 
 .bold-text-14 {
-  @extend .typography;
+  @extend %typography;
 
   font-size: var(--font-size-s);
   font-weight: var(--font-weight-bold);
@@ -75,7 +75,7 @@
 }
 
 .small-text {
-  @extend .typography;
+  @extend %typography;
 
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
@@ -83,7 +83,7 @@
 }
 
 .semi-bold-small-text {
-  @extend .typography;
+  @extend %typography;
 
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-semi-bold);

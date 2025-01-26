@@ -1,13 +1,14 @@
 import clsx from 'clsx'
+
 import s from './text-area.module.scss'
 
 export type TextAreaProps = {
+  disabled?: boolean
   error?: string
   label?: string
-  disabled?: boolean
 }
 
-export const TextArea = ({ error, label, disabled }: TextAreaProps) => {
+export const TextArea = ({ disabled, error, label }: TextAreaProps) => {
   return (
     <div className={s.container}>
       {label && <label className={clsx(s.label, { [s.disabled]: disabled })}>{label}</label>}

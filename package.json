@@ -7,9 +7,11 @@
     "dev": "storybook dev -p 6006",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
+    "lint:scss": "npx stylelint \"**/*.scss\"",
+    "lint:fix": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix && npx stylelint \"**/*.scss\" --fix",
     "preview": "vite preview",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -17,6 +19,8 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "@it-incubator/eslint-config": "^1.0.3",
     "@it-incubator/prettier-config": "^0.1.2",
     "@it-incubator/stylelint-config": "^2.0.0",
@@ -32,6 +36,7 @@
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint-plugin-storybook": "^0.11.2",
+    "husky": "^9.1.7",
     "sass": "^1.83.4",
     "storybook": "8.5.0",
     "stylelint": "^16.13.2",

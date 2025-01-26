@@ -5,7 +5,6 @@
 
   box-sizing: border-box;
   padding: 0.5rem 1rem;
-
   border-radius: 0.25rem;
 
   &:focus-visible {
@@ -29,8 +28,8 @@
 }
 
 .tertiary {
-  color: blue;
   border: 1px solid blue;
+  color: blue;
 }
 
 .link {
